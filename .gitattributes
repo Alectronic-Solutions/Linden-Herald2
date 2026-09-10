@@ -1,0 +1,2 @@
+# Preserve the exact captured bytes on every checkout.
+* -text

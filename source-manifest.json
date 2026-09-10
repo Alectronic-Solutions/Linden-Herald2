@@ -1,0 +1,124 @@
+{
+  "captured": "2026-09-10",
+  "source": "https://lindenherald.com/",
+  "originalMissingAssets": [
+    "images/img03.jpg",
+    "images/img10.jpg"
+  ],
+  "files": [
+    {
+      "path": "about.php",
+      "source": "https://lindenherald.com/about.php",
+      "bytes": 5700,
+      "sha256": "5220faf3970b61ca11c3d5ffb7b294246b70b4190b37d963a2b599d068d46cb9"
+    },
+    {
+      "path": "advertise.php",
+      "source": "https://lindenherald.com/advertise.php",
+      "bytes": 5169,
+      "sha256": "0fa12a812fa7e917c5f2949163eeb4690aa1e1ce336352e4a163975d6beb2981"
+    },
+    {
+      "path": "archive/Linden Herld 20260618.pdf",
+      "source": "https://lindenherald.com/archive/Linden Herld 20260618.pdf",
+      "bytes": 24479899,
+      "sha256": "d136d861a538fa4ebf0a0ff164113d14e11485d8bf88dd7c9823200c692d4c1f"
+    },
+    {
+      "path": "archive/Linden Herld 20260702.pdf",
+      "source": "https://lindenherald.com/archive/Linden Herld 20260702.pdf",
+      "bytes": 16111137,
+      "sha256": "f662db3ecad11c8f89770833a43c82aa1ac35295f89eb96f87ad3a5066807f4f"
+    },
+    {
+      "path": "archive/Linden Herld 20260709.pdf",
+      "source": "https://lindenherald.com/archive/Linden Herld 20260709.pdf",
+      "bytes": 18076837,
+      "sha256": "18f379567c6f5a9a794b45081a3f5cb92cb583b2b2db0cf92871deacfba409d2"
+    },
+    {
+      "path": "archive/Linden Herld 20260723.pdf",
+      "source": "https://lindenherald.com/archive/Linden Herld 20260723.pdf",
+      "bytes": 15109026,
+      "sha256": "ab393abc98b5cc59e7bd757e823f1cbf453cc910cc839e441ccace54b23e10ed"
+    },
+    {
+      "path": "archive/Linden Herld 20260730.pdf",
+      "source": "https://lindenherald.com/archive/Linden Herld 20260730.pdf",
+      "bytes": 20349613,
+      "sha256": "334ca4f114256180aef634045b37e6e7e1405da3a38a7b5a09ad0b5850ba8a2c"
+    },
+    {
+      "path": "archive/Linden Herld 20260806.pdf",
+      "source": "https://lindenherald.com/archive/Linden Herld 20260806.pdf",
+      "bytes": 20075593,
+      "sha256": "6031b9bbb63e4ea9095a04c125d286330ef7f2f3ad9ea7362b445ccd68c9929e"
+    },
+    {
+      "path": "archive/Linden Herld 20260903.pdf",
+      "source": "https://lindenherald.com/archive/Linden Herld 20260903.pdf",
+      "bytes": 14272097,
+      "sha256": "d0a8005b14c2a515d8a6b8994f65fe40be6c9ab94b7d145565b857c99c53f4a2"
+    },
+    {
+      "path": "archive.php",
+      "source": "https://lindenherald.com/archive.php",
+      "bytes": 4044,
+      "sha256": "c4ad3dfcab54a3f3906323a0a26044c536b7f76bbea417b590a0ecb2bd0f824a"
+    },
+    {
+      "path": "contact.php",
+      "source": "https://lindenherald.com/contact.php",
+      "bytes": 4382,
+      "sha256": "5be7cf2768290b62dd4a7b267d92caf8e7c603e47b71a3cef12f3ca5cf9af026"
+    },
+    {
+      "path": "images/img01.jpg",
+      "source": "https://lindenherald.com/images/img01.jpg",
+      "bytes": 355,
+      "sha256": "f32776d0a7f9edb7628ce28a30ea651aa87d74d29d07b678e9f69d188a7606e2"
+    },
+    {
+      "path": "images/img02.gif",
+      "source": "https://lindenherald.com/images/img02.gif",
+      "bytes": 53,
+      "sha256": "422c7a3dbb4886c99dabbfec96e52f9c2388ed7eb07718663de469e0f2596bff"
+    },
+    {
+      "path": "images/lindenpg1.png",
+      "source": "https://lindenherald.com/images/lindenpg1.png",
+      "bytes": 114316,
+      "sha256": "9a9e4bb01bf3f20867e70d7963b64de15ccd14c8ac34f86681de2daf59753122"
+    },
+    {
+      "path": "images/page_white_acrobat.png",
+      "source": "https://lindenherald.com/images/page_white_acrobat.png",
+      "bytes": 689,
+      "sha256": "28c2ce5821f7750f06423db4950325758eadbd9e5ae81c08ea84badd8a15608a"
+    },
+    {
+      "path": "index.html",
+      "source": "https://lindenherald.com/",
+      "bytes": 3191,
+      "sha256": "2211f4762769f62b86b92773efc2dcd739e817f205c67a0e3934860995106f2a"
+    },
+    {
+      "path": "index.php",
+      "source": "https://lindenherald.com/",
+      "bytes": 3191,
+      "sha256": "2211f4762769f62b86b92773efc2dcd739e817f205c67a0e3934860995106f2a"
+    },
+    {
+      "path": "style.css",
+      "source": "https://lindenherald.com/style.css",
+      "bytes": 7832,
+      "sha256": "f879d1f1f603f1ddbedff770941577a5978044a5f0acbb461a37737bb04e3247"
+    },
+    {
+      "path": "subscribe.php",
+      "source": "https://lindenherald.com/subscribe.php",
+      "bytes": 3601,
+      "sha256": "8b37357e3b3e1d6d9dbf4b1fa4f223cff01083d366c4e74324e3380a5d145872"
+    }
+  ]
+}
