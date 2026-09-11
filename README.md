@@ -6,6 +6,8 @@ The six public pages were initially copied exactly in commit `ecd6599eaa63063de4
 
 `refinements.css` adds fluid page widths, a stacked phone layout, six visible navigation links arranged in two rows on phones, larger touch targets, readable body text and a form that fits small screens. Semantic labels, suitable mobile keyboards, autofill hints and tap-to-call links improve usability without adding JavaScript.
 
+The masthead sits above a full-width teal navigation bar. A restrained newspaper frame, serif page headings and fine dividing rules add polish while preserving the original content. The shared footer provides the mailing address, phone number, page links and a back-to-top link, with a compact layout on phones.
+
 ## Publish a new GitHub repository with GitHub Pages
 
 1. Create an empty GitHub repository and commit/push this whole project, including `.github/workflows/pages.yml`. Keep the newspaper PDFs in Git; do not commit `_site/` or `.artifacts/`.

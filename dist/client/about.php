@@ -24,13 +24,16 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
     </head>
     <body>
         <!-- end #header-wrapper -->
-        <div id="header" role="banner">
-        	<div id="logo">
-        		<h1><a href="index.php">Linden Herald</a></h1>
-        		<p><em>serving San Joaquin County since 1959</em></p>
-        	</div>
-        	<div id="menu" role="navigation" aria-label="Main navigation">
-        		<ul>
+        <header id="header">
+            <div class="masthead-inner">
+                <div id="logo">
+                    <h1><a href="index.php">Linden Herald</a></h1>
+                    <p><em>serving San Joaquin County since 1959</em></p>
+                </div>
+                <p class="publication-note"><span>Linden, California</span><span>Published weekly</span></p>
+            </div>
+            <nav id="menu" aria-label="Main navigation">
+                <ul>
         			<li><a href="index.php" class="first">Home</a></li>
         			<li class="current_page_item"><a aria-current="page" href="about.php">About</a></li>
         			<li><a href="subscribe.php">Subscribe</a></li>
@@ -38,9 +41,8 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         			<li><a href="contact.php">Contact</a></li>
                     <li><a href="archive.php">Archive</a></li>
         		</ul>
-        	</div>
-        	<!-- end #menu -->
-        </div>
+            </nav>
+        </header>
         <!-- end #header -->
         <hr />
         <div id="page" role="main">
@@ -100,16 +102,46 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         		</div>
         		<!-- end #content -->
         		<div id="sidebar">
-        			<img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" />
+        			<figure class="newspaper">
+                        <div class="newspaper-frame"><img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" /></div>
+                        <figcaption class="edition-caption">
+                            <span>Our weekly newspaper</span>
+                            <a href="archive.php">Browse the archive</a>
+                        </figcaption>
+                    </figure>
         		</div>
         		<!-- end #sidebar -->
         		<div class="layout-clear" aria-hidden="true">&nbsp;</div>
         	</div>
         	<!-- end #page -->
         </div>
-        <div id="footer" role="contentinfo">
-        	<p>Copyright 2026</p>
-        </div>
+        <footer id="footer">
+            <div class="footer-inner">
+                <div class="footer-identity">
+                    <a class="footer-brand" href="index.php">Linden Herald</a>
+                    <p class="footer-tagline">Serving San Joaquin County since 1959.</p>
+                </div>
+                <nav aria-label="Footer navigation">
+                    <h2 class="footer-heading">The Herald</h2>
+                    <ul class="footer-links">
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="subscribe.php">Subscribe</a></li>
+                        <li><a href="advertise.php">Advertise</a></li>
+                        <li><a href="archive.php">Archive</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contact">
+                    <h2 class="footer-heading">Get in touch</h2>
+                    <address>PO Box 929<br />Linden, CA 95236</address>
+                    <a class="footer-phone" href="tel:+12097728854">(209) 772-8854</a>
+                    <p><a href="contact.php">Contact us</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2026 Linden Herald</p>
+                <a class="back-to-top" href="#header">Back to top</a>
+            </div>
+        </footer>
         <!-- end #footer -->
     </body>
 </html>
