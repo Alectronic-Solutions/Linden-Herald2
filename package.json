@@ -7,6 +7,12 @@
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
-    "check": "node scripts/verify.mjs"
+    "check": "node scripts/verify.mjs",
+    "build:pages": "node scripts/build-github-pages.mjs",
+    "test:pages": "node --test tests/github-pages.test.mjs",
+    "preview:pages": "node scripts/preview-github-pages.mjs"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
