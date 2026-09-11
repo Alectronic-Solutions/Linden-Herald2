@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 5rem;
+}
+
 body {
   font-size: 16px;
   color: #484848;
@@ -83,6 +87,9 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visib
 }
 
 #menu {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   float: none;
   width: 100%;
   height: auto;
@@ -476,6 +483,10 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 700px) {
+  html {
+    scroll-padding-top: 8rem;
+  }
+
   .masthead-inner {
     display: block;
     padding: 24px 0 20px;

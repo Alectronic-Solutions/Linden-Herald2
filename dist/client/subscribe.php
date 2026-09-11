@@ -32,17 +32,17 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                 </div>
                 <p class="publication-note"><span>Linden, California</span><span>Published weekly</span></p>
             </div>
-            <nav id="menu" aria-label="Main navigation">
-                <ul>
-        			<li><a href="index.php" class="first">Home</a></li>
-        			<li><a href="about.php">About</a></li>
-        			<li class="current_page_item"><a aria-current="page" href="subscribe.php">Subscribe</a></li>
-        			<li><a href="advertise.php">Advertise</a></li>
-        			<li><a href="contact.php">Contact</a></li>
-                    <li><a href="archive.php">Archive</a></li>
-        		</ul>
-            </nav>
         </header>
+        <nav id="menu" aria-label="Main navigation">
+            <ul>
+    			<li><a href="index.php" class="first">Home</a></li>
+    			<li><a href="about.php">About</a></li>
+    			<li class="current_page_item"><a aria-current="page" href="subscribe.php">Subscribe</a></li>
+    			<li><a href="advertise.php">Advertise</a></li>
+    			<li><a href="contact.php">Contact</a></li>
+                <li><a href="archive.php">Archive</a></li>
+    		</ul>
+        </nav>
         <!-- end #header -->
         <hr />
         <div id="page" role="main">
