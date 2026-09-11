@@ -19,20 +19,21 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="refinements.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
         <!-- end #header-wrapper -->
-        <div id="header">
+        <div id="header" role="banner">
         	<div id="logo">
-        		<h1><a href="#">Linden Herald</a></h1>
+        		<h1><a href="index.php">Linden Herald</a></h1>
         		<p><em>serving San Joaquin County since 1959</em></p>
         	</div>
-        	<div id="menu">
+        	<div id="menu" role="navigation" aria-label="Main navigation">
         		<ul>
         			<li><a href="index.php" class="first">Home</a></li>
         			<li><a href="about.php">About</a></li>
         			<li><a href="subscribe.php">Subscribe</a></li>
-        			<li class="current_page_item"><a href="advertise.php">Advertise</a></li>
+        			<li class="current_page_item"><a aria-current="page" href="advertise.php">Advertise</a></li>
         			<li><a href="contact.php">Contact</a></li>
         			<li><a href="archive.php">Archive</a></li>
         		</ul>
@@ -41,7 +42,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         </div>
         <!-- end #header -->
         <hr />
-        <div id="page">
+        <div id="page" role="main">
         	<div id="page-bgtop">
         		<div id="content">
         			<div class="post">
@@ -67,7 +68,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                                 (extra names $10 each)
                                 $425 for Family Law (divorce),
                                 $425 for name change, $425 for Summon
-                                $425 for business bulk sale transfer, etc. Call 209-772-8854
+                                $425 for business bulk sale transfer, etc. Call <a href="tel:+12097728854">209-772-8854</a>
                                 for further pricing. We will file the proof of publication
                                 at no cost for advertisers with the San Joaquin County Court
                                 or San Joaquin County Recorder and issue another copy to
@@ -89,20 +90,20 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                                     Linden CA 95236</strong></p>
         
                             <h2>Phone Number</h2>
-                            <p>24 Hours - (209) 772-8854</p>
+                            <p>24 Hours - <a href="tel:+12097728854">(209) 772-8854</a></p>
         				</div>
         			</div>
         		</div>
         		<!-- end #content -->
         		<div id="sidebar">
-        			<img border ="1" src="images/lindenpg1.png" />
+        			<img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" />
         		</div>
         		<!-- end #sidebar -->
-        		<div style="clear: both;">&nbsp;</div>
+        		<div class="layout-clear" aria-hidden="true">&nbsp;</div>
         	</div>
         	<!-- end #page -->
         </div>
-        <div id="footer">
+        <div id="footer" role="contentinfo">
         	<p>Copyright 2026</p>
         </div>
         <!-- end #footer -->

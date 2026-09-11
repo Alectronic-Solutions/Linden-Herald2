@@ -1,0 +1,364 @@
+/* Small readability and mobile improvements to the original OffRecord layout. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #484848;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-underline-offset: 0.18em;
+}
+
+a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visible {
+  outline: 3px solid #007777;
+  outline-offset: 3px;
+}
+
+#header, #page {
+  width: min(960px, calc(100% - 40px));
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+  height: auto;
+  min-height: 135px;
+  padding: 0;
+}
+
+#logo {
+  float: none;
+  flex: 0 1 auto;
+  align-self: center;
+  min-width: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#logo h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+#logo p {
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #6b6b6b;
+  text-align: left;
+}
+
+#menu {
+  float: none;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+}
+
+#menu ul {
+  display: flex;
+  float: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  float: none;
+}
+
+#menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: none;
+  height: 100%;
+  min-height: 135px;
+  margin: 0;
+  padding: 16px 11px;
+  border-bottom: 5px solid transparent;
+  font-size: 1.0625rem;
+  line-height: 1.3;
+}
+
+#menu a:hover {
+  background: #edf5f4;
+  color: #005555;
+}
+
+#menu .current_page_item a {
+  border-bottom: 5px solid #007777;
+  background: #005555;
+  color: #fff;
+}
+
+#menu a:focus-visible {
+  outline-offset: -4px;
+}
+
+#page {
+  margin: 0 auto 28px;
+  padding-top: 40px;
+}
+
+#page-bgtop {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
+  align-items: start;
+  gap: 60px;
+}
+
+#content, #sidebar {
+  float: none;
+  width: auto;
+  min-width: 0;
+}
+
+.layout-clear {
+  display: none;
+}
+
+.post {
+  margin: 0;
+}
+
+.post .title {
+  padding: 4px 0 10px;
+  font-size: clamp(1.5rem, 1.1rem + 1vw, 1.875rem);
+  line-height: 1.3;
+  text-transform: none;
+  overflow-wrap: anywhere;
+}
+
+.post .entry {
+  padding: 24px 0 12px;
+}
+
+.post p, .post ul, .post ol {
+  margin: 0 0 1.15em;
+  text-align: left;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+
+.post .entry h2 {
+  margin: 1.5em 0 0.55em;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.post .entry > :first-child {
+  margin-top: 0;
+}
+
+#sidebar > img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  border: 1px solid #b8b8b8;
+}
+
+.archive-list {
+  padding: 0;
+  list-style: none;
+}
+
+.archive-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e1e5e5;
+}
+
+.archive-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  max-width: 100%;
+}
+
+.archive-list img {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 12px 0 0;
+  padding: 12px 20px 20px;
+  border: 1px solid #becbca;
+  border-radius: 3px;
+}
+
+legend {
+  max-width: 100%;
+  padding: 0 6px;
+  color: #333;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.form-field {
+  margin: 0 0 16px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+input, textarea, button {
+  max-width: 100%;
+  font: inherit;
+}
+
+.form-field input, .form-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #9daead;
+  border-radius: 3px;
+  background: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+.form-field textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid #005555;
+  border-radius: 3px;
+  background: #005555;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #007070;
+}
+
+#footer {
+  height: auto;
+  min-height: 100px;
+  padding: 30px 20px;
+}
+
+#footer p {
+  padding: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-image: none;
+  }
+
+  #header {
+    display: block;
+    min-height: 0;
+    padding-top: 24px;
+    border-bottom: 1px solid #d5dddd;
+  }
+
+  #logo h1 {
+    font-size: clamp(2.125rem, 5.5vw, 3rem);
+  }
+
+  #menu {
+    margin-top: 22px;
+  }
+
+  #menu ul {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    height: auto;
+  }
+
+  #menu a {
+    min-height: 48px;
+    padding: 12px 8px;
+    font-size: 1rem;
+  }
+
+  #page-bgtop {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 240px);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  #menu ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+    padding-bottom: 8px;
+  }
+
+  #menu a {
+    min-height: 48px;
+    height: 100%;
+    border-bottom-width: 3px;
+  }
+
+  #menu .current_page_item a {
+    border-bottom-width: 3px;
+  }
+
+  #page {
+    padding-top: 28px;
+    margin-bottom: 32px;
+  }
+
+  #page-bgtop {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  #logo p {
+    float: none;
+  }
+
+  .post .entry {
+    padding-top: 20px;
+  }
+
+  #sidebar {
+    padding-top: 20px;
+    border-top: 1px solid #e1e5e5;
+  }
+
+  fieldset {
+    padding: 12px 14px 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  #header, #page {
+    width: calc(100% - 32px);
+  }
+
+  #menu a {
+    padding-inline: 4px;
+  }
+}

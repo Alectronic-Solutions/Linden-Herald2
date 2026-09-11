@@ -20,21 +20,22 @@ Released   : 20100705
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="refinements.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
         <!-- end #header-wrapper -->
-        <div id="header">
+        <div id="header" role="banner">
         	<div id="logo">
-        		<h1><a href="#">Linden Herald</a></h1>
+        		<h1><a href="index.php">Linden Herald</a></h1>
         		<p><em>Serving Central California since 1959</em></p>
         	</div>
-        	<div id="menu">
+        	<div id="menu" role="navigation" aria-label="Main navigation">
         		<ul>
         			<li><a href="index.php" class="first">Home</a></li>
         			<li><a href="about.php">About</a></li>
         			<li><a href="subscribe.php">Subscribe</a></li>
         			<li><a href="advertise.php">Advertise</a></li>
-        			<li class="current_page_item"><a href="contact.php">Contact</a></li>
+        			<li class="current_page_item"><a aria-current="page" href="contact.php">Contact</a></li>
                     <li><a href="archive.php">Archive</a></li>
         		</ul>
         	</div>
@@ -42,7 +43,7 @@ Released   : 20100705
         </div>
         <!-- end #header -->
         <hr />
-        <div id="page">
+        <div id="page" role="main">
         	<div id="page-bgtop">
         		<div id="content">
         			<div class="post">
@@ -60,53 +61,42 @@ Released   : 20100705
         
                             <p>Our correspondents live and work in Linden and are available
                                 at anytime,<br />Our phone number 24 hrs, seven days is
-                                <strong>209-772-8854</strong>.</p>
+                                <strong><a href="tel:+12097728854">209-772-8854</a></strong>.</p>
                             <form action="contact.php" method="post">
                                 <fieldset>
                                     <legend>Send a Message</legend>
-                                                                            name:<br /><INPUT type="text"
-            size="40"
-            maxlength="40"
-            name="lhname"
-            id="lhname"
-            value=""
-        ><br />
-                                        email:<br /><INPUT type="text"
-            size="60"
-            maxlength="60"
-            name="lhemail"
-            id="lhemail"
-            value=""
-        ><br />
-                                        phone (###-###-####):<br /><INPUT type="text"
-            size="20"
-            maxlength="20"
-            name="lhphone"
-            id="lhphone"
-            value=""
-        ><br />
-                                        message:<br /><textarea
-            name="message4lh"
-            id="message4lh"
-            cols="60"
-            rows="8"
-        ></textarea><br />
-                                        <br />Submit Message<input type="submit">
-                                                                   </fieldset>
+                                    <div class="form-field">
+                                        <label for="lhname">Name</label>
+                                        <input type="text" name="lhname" id="lhname" maxlength="40" autocomplete="name" />
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="lhemail">Email</label>
+                                        <input type="email" name="lhemail" id="lhemail" maxlength="60" autocomplete="email" />
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="lhphone">Phone (###-###-####)</label>
+                                        <input type="tel" name="lhphone" id="lhphone" maxlength="20" autocomplete="tel" />
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="message4lh">Message</label>
+                                        <textarea name="message4lh" id="message4lh" rows="8"></textarea>
+                                    </div>
+                                    <button type="submit">Submit Message</button>
+                                </fieldset>
                             </form>
         				</div>
         			</div>
         		</div>
         		<!-- end #content -->
         		<div id="sidebar">
-        			<img border ="1" src="images/lindenpg1.png" />
+        			<img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" />
         		</div>
         		<!-- end #sidebar -->
-        		<div style="clear: both;">&nbsp;</div>
+        		<div class="layout-clear" aria-hidden="true">&nbsp;</div>
         	</div>
         	<!-- end #page -->
         </div>
-        <div id="footer">
+        <div id="footer" role="contentinfo">
         	<p>Copyright 2026</p>
         </div>
         <!-- end #footer -->
