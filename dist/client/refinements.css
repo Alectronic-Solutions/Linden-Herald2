@@ -1,4 +1,12 @@
-/* Restrained newspaper styling layered over the original OffRecord design. */
+/* Shared newspaper styling layered over the original OffRecord design. */
+:root {
+  --ink: #263833;
+  --teal: #005555;
+  --muted: #5c6863;
+  --rule: #d9dfdc;
+  --paper: #f4f6f3;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -11,6 +19,7 @@ body {
   font-size: 16px;
   color: #484848;
   background: #fff;
+  line-height: 1.7;
 }
 
 img {
@@ -72,9 +81,16 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visib
   padding: 0;
 }
 
-#logo h1 {
+#logo .masthead-name {
+  margin: 0;
+  padding: 0;
   font-size: 3.125rem;
   line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+#logo .masthead-name a {
+  color: #000;
 }
 
 #logo p {
@@ -177,8 +193,9 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visib
   border-bottom: 1px solid #d9dfdc;
   background: none;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: clamp(1.625rem, 1.25rem + 1vw, 2rem);
-  line-height: 1.3;
+  font-size: clamp(1.875rem, 1.35rem + 1vw, 2.25rem);
+  line-height: 1.2;
+  color: var(--ink);
   text-transform: none;
   overflow-wrap: anywhere;
 }
@@ -196,9 +213,12 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visib
 
 .post .entry h2 {
   margin: 1.5em 0 0.55em;
-  font-size: 1.125rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.375rem;
   line-height: 1.4;
-  letter-spacing: 0.025em;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
 }
 
 .post .entry > :first-child {
@@ -249,16 +269,52 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visib
 }
 
 .archive-list li {
-  padding: 8px 0;
+  padding: 0;
   border-bottom: 1px solid #e1e5e5;
 }
 
 .archive-list a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  min-height: 44px;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 84px;
   max-width: 100%;
+  padding: 16px 12px;
+  text-decoration: none;
+}
+
+.archive-list a:hover {
+  background: var(--paper);
+}
+
+.archive-list a:hover time {
+  text-decoration: underline;
+}
+
+.archive-edition {
+  display: grid;
+  line-height: 1.5;
+}
+
+.archive-edition time {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+.archive-edition > span, .archive-file {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.archive-file {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.archive-file > span[aria-hidden] {
+  margin-left: 10px;
+  color: var(--teal);
 }
 
 .archive-list img {
@@ -269,17 +325,19 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visib
 
 fieldset {
   min-width: 0;
-  margin: 12px 0 0;
-  padding: 12px 20px 20px;
-  border: 1px solid #becbca;
-  border-radius: 3px;
+  margin: 28px 0 0;
+  padding: 20px 24px 24px;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--paper);
 }
 
 legend {
   max-width: 100%;
   padding: 0 6px;
-  color: #333;
-  font-size: 1.125rem;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.375rem;
   line-height: 1.4;
 }
 
@@ -292,6 +350,8 @@ legend {
   margin-bottom: 6px;
   font-size: 0.9375rem;
   line-height: 1.5;
+  color: var(--ink);
+  font-weight: 600;
 }
 
 input, textarea, button {
@@ -325,6 +385,7 @@ button[type="submit"] {
   background: #005555;
   color: #fff;
   cursor: pointer;
+  font-weight: 600;
 }
 
 button[type="submit"]:hover {
@@ -447,6 +508,326 @@ button[type="submit"]:hover {
   font-size: 0.875rem;
 }
 
+/* Small, reusable editorial details and links. */
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 16px;
+  z-index: 200;
+  padding: 10px 16px;
+  transform: translateY(-160%);
+  background: #fff;
+  color: var(--teal);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.eyebrow, .post .eyebrow {
+  margin: 0 0 12px;
+  color: var(--teal);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.post .lead {
+  margin-bottom: 18px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.375rem;
+  line-height: 1.5;
+}
+
+.page-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 26px;
+}
+
+.button, .text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.button {
+  padding: 12px 18px;
+  border: 1px solid var(--teal);
+  border-radius: 2px;
+  background: var(--teal);
+  color: #fff;
+}
+
+.button:hover {
+  background: #003f3f;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.section-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 0.875rem;
+}
+
+.help-note, .subscription-offer {
+  margin: 28px 0;
+  padding: 24px;
+  border-left: 3px solid var(--teal);
+  background: var(--paper);
+}
+
+.post .help-note h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.post .help-note p:last-child, .post .subscription-offer p:last-child {
+  margin-bottom: 0;
+}
+
+.post .subscription-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 10px;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.subscription-price strong {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.post .fine-print, .post .archive-note {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.mailing-address {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  border-left: 1px solid var(--rule);
+  font-style: normal;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin: 28px 0;
+  padding: 24px 0;
+  border-block: 1px solid var(--rule);
+}
+
+.post .contact-details h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.contact-number {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 1.125rem;
+}
+
+.contact-details address {
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+.post .contact-details p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+/* Home: a familiar welcome, followed by the services readers need. */
+.home-page #page-bgtop {
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 64px;
+}
+
+.home-page .post .title {
+  max-width: 540px;
+  font-size: clamp(2rem, 1.5rem + 1.5vw, 2.75rem);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.home-page .post .entry {
+  padding-top: 22px;
+}
+
+.home-services {
+  margin-top: 44px;
+  padding-top: 30px;
+  border-top: 2px solid var(--teal);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  margin-bottom: 26px;
+}
+
+.section-heading h2, .community-note h2 {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.875rem;
+  line-height: 1.3;
+  text-transform: none;
+}
+
+.section-heading > p {
+  max-width: 235px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-block: 1px solid var(--rule);
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 24px 20px;
+  min-width: 0;
+}
+
+.service-item:first-child {
+  padding-left: 0;
+}
+
+.service-item:last-child {
+  padding-right: 0;
+}
+
+.service-item + .service-item {
+  border-left: 1px solid var(--rule);
+}
+
+.service-item h3 {
+  margin: 0 0 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+.service-item h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.service-item h3 a:hover {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
+.service-item p {
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.service-item .service-category {
+  margin: 0 0 12px;
+  color: var(--teal);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.service-item > .text-link {
+  margin-top: auto;
+  font-size: 0.8125rem;
+}
+
+.community-note {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 48px;
+  margin: 48px 0 0;
+  padding: 32px;
+  background: var(--paper);
+}
+
+.community-note p:not(.eyebrow) {
+  margin: 14px 0 8px;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.community-contact {
+  padding-left: 32px;
+  border-left: 1px solid #cdd7d1;
+}
+
+.community-contact h3 {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.375rem;
+  line-height: 1.4;
+  text-transform: none;
+}
+
 @media (max-width: 1000px) {
   body {
     background-image: none;
@@ -456,7 +837,7 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  #logo h1 {
+  #logo .masthead-name {
     font-size: clamp(2.125rem, 5.5vw, 3.125rem);
   }
 
@@ -479,6 +860,28 @@ button[type="submit"]:hover {
   #page-bgtop {
     grid-template-columns: minmax(0, 1fr) minmax(0, 240px);
     gap: 32px;
+  }
+
+  .home-page #page-bgtop {
+    gap: 40px;
+    grid-template-columns: minmax(0, 1fr) 220px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-item, .service-item:first-child, .service-item:last-child {
+    padding: 24px;
+  }
+
+  .service-item:nth-child(odd) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .service-item:nth-child(n + 3) {
+    border-top: 1px solid var(--rule);
   }
 }
 
@@ -527,7 +930,7 @@ button[type="submit"]:hover {
     margin-bottom: 32px;
   }
 
-  #page-bgtop {
+  #page-bgtop, .home-page #page-bgtop {
     grid-template-columns: minmax(0, 1fr);
     gap: 24px;
   }
@@ -546,7 +949,7 @@ button[type="submit"]:hover {
   }
 
   .newspaper {
-    max-width: 296px;
+    max-width: 240px;
     margin: 0 auto;
   }
 
@@ -569,6 +972,89 @@ button[type="submit"]:hover {
 
   fieldset {
     padding: 12px 14px 18px;
+  }
+
+  .home-page #page-bgtop {
+    gap: 28px;
+  }
+
+  .home-page .newspaper {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    align-items: center;
+    gap: 24px;
+    max-width: none;
+  }
+
+  .home-page .newspaper-frame {
+    padding: 4px;
+  }
+
+  .home-page .edition-caption {
+    padding: 0;
+    text-align: left;
+  }
+
+  .home-services {
+    margin-top: 32px;
+  }
+
+  .section-heading > p {
+    max-width: none;
+  }
+
+  .community-note {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+    padding: 24px;
+  }
+
+  .community-contact {
+    padding: 24px 0 0;
+    border-left: 0;
+    border-top: 1px solid #cdd7d1;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-grid, .contact-details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-item, .service-item:first-child, .service-item:last-child {
+    padding: 22px 0;
+    border-left: 0;
+  }
+
+  .service-item + .service-item {
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .service-item h3 {
+    margin-bottom: 10px;
+  }
+
+  .service-item p {
+    margin-bottom: 6px;
+  }
+
+  .contact-details {
+    gap: 20px;
+  }
+
+  .archive-list a {
+    gap: 8px;
+    padding-inline: 0;
+  }
+
+  .archive-edition time {
+    font-size: 1.125rem;
+  }
+
+  .archive-file > span[aria-hidden] {
+    margin-left: 2px;
   }
 }
 

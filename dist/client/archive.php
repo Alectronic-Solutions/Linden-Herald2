@@ -16,17 +16,17 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />        <title>Linden Herald On-Line Archive</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
+        <meta name="description" content="Browse past issues of the Linden Herald as PDFs. Additional copies dating to 1959 are available for review at the Stockton Public Library." />
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="refinements.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
+        <a class="skip-link" href="#page">Skip to content</a>
         <!-- end #header-wrapper -->
         <header id="header">
             <div class="masthead-inner">
                 <div id="logo">
-                    <h1><a href="index.php">Linden Herald</a></h1>
+                    <p class="masthead-name"><a href="index.php">Linden Herald</a></p>
                     <p><em>serving San Joaquin County since 1959</em></p>
                 </div>
                 <p class="publication-note"><span>Linden, California</span><span>Published weekly</span></p>
@@ -44,19 +44,19 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         </nav>
         <!-- end #header -->
         <hr />
-        <div id="page" role="main">
+        <main id="page" tabindex="-1">
             <div id="page-bgtop">
                 <div id="content">
                     <div class="post">
-                        <h2 class="title">Linden Herald Archive</h2>
+                        <p class="eyebrow">From the pages of the Herald</p>
+                        <h1 class="title">The newspaper archive</h1>
                         <div class="entry">
-                            <p>Here are the past issues of The Linden Herald.
-                                Additional copies dating to 1959 are available for
-                                review at the Stockton Public Library.<br />
-                            <a href="subscribe.php">Subscribe to the Linden Herald</a>
-                            to receive current news!</p>
-                            <p><em>(please note the PDF files may be quite large)</em></p>
-                            <ul class="archive-list"><li><a href="archive/Linden Herld 20260903.pdf" target="_blank" rel="noopener"><img src="images/page_white_acrobat.png" alt="PDF: " width="16" height="16" />Linden Herald 09/03/2026</a> (size: 13.6mb)</li><li><a href="archive/Linden Herld 20260806.pdf" target="_blank" rel="noopener"><img src="images/page_white_acrobat.png" alt="PDF: " width="16" height="16" />Linden Herald 08/06/2026</a> (size: 19.1mb)</li><li><a href="archive/Linden Herld 20260730.pdf" target="_blank" rel="noopener"><img src="images/page_white_acrobat.png" alt="PDF: " width="16" height="16" />Linden Herald 07/30/2026</a> (size: 19.4mb)</li><li><a href="archive/Linden Herld 20260723.pdf" target="_blank" rel="noopener"><img src="images/page_white_acrobat.png" alt="PDF: " width="16" height="16" />Linden Herald 07/23/2026</a> (size: 14.4mb)</li><li><a href="archive/Linden Herld 20260709.pdf" target="_blank" rel="noopener"><img src="images/page_white_acrobat.png" alt="PDF: " width="16" height="16" />Linden Herald 07/09/2026</a> (size: 17.2mb)</li><li><a href="archive/Linden Herld 20260702.pdf" target="_blank" rel="noopener"><img src="images/page_white_acrobat.png" alt="PDF: " width="16" height="16" />Linden Herald 07/02/2026</a> (size: 15.4mb)</li><li><a href="archive/Linden Herld 20260618.pdf" target="_blank" rel="noopener"><img src="images/page_white_acrobat.png" alt="PDF: " width="16" height="16" />Linden Herald 06/18/2026</a> (size: 23.3mb)</li></ul>
+                            <p class="lead">A record of life in our community.</p>
+                            <p>Read past issues of the Linden Herald below. Additional copies dating to 1959 are available for review at the Stockton Public Library.</p>
+                            <p class="archive-note">Issues open as PDFs in a new tab. File sizes are listed with each edition.</p>
+                            <h2 class="archive-year">2026 editions</h2>
+                            <ul class="archive-list"><li><a href="archive/Linden Herld 20260903.pdf" target="_blank" rel="noopener"><span class="archive-edition"><time datetime="2026-09-03">September 3, 2026</time><span>Linden Herald</span></span><span class="archive-file">PDF &middot; 13.6 MB <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">&nearr;</span></span></a></li><li><a href="archive/Linden Herld 20260806.pdf" target="_blank" rel="noopener"><span class="archive-edition"><time datetime="2026-08-06">August 6, 2026</time><span>Linden Herald</span></span><span class="archive-file">PDF &middot; 19.1 MB <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">&nearr;</span></span></a></li><li><a href="archive/Linden Herld 20260730.pdf" target="_blank" rel="noopener"><span class="archive-edition"><time datetime="2026-07-30">July 30, 2026</time><span>Linden Herald</span></span><span class="archive-file">PDF &middot; 19.4 MB <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">&nearr;</span></span></a></li><li><a href="archive/Linden Herld 20260723.pdf" target="_blank" rel="noopener"><span class="archive-edition"><time datetime="2026-07-23">July 23, 2026</time><span>Linden Herald</span></span><span class="archive-file">PDF &middot; 14.4 MB <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">&nearr;</span></span></a></li><li><a href="archive/Linden Herld 20260709.pdf" target="_blank" rel="noopener"><span class="archive-edition"><time datetime="2026-07-09">July 9, 2026</time><span>Linden Herald</span></span><span class="archive-file">PDF &middot; 17.2 MB <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">&nearr;</span></span></a></li><li><a href="archive/Linden Herld 20260702.pdf" target="_blank" rel="noopener"><span class="archive-edition"><time datetime="2026-07-02">July 2, 2026</time><span>Linden Herald</span></span><span class="archive-file">PDF &middot; 15.4 MB <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">&nearr;</span></span></a></li><li><a href="archive/Linden Herld 20260618.pdf" target="_blank" rel="noopener"><span class="archive-edition"><time datetime="2026-06-18">June 18, 2026</time><span>Linden Herald</span></span><span class="archive-file">PDF &middot; 23.3 MB <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">&nearr;</span></span></a></li></ul>
+                            <div class="help-note"><h2>Stay up to date</h2><p><a href="subscribe.php">Subscribe to the Linden Herald</a> to receive the newspaper each week.</p></div>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                     <figure class="newspaper">
                         <div class="newspaper-frame"><img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" /></div>
                         <figcaption class="edition-caption">
-                            <span>Our weekly newspaper</span>
+                            <span>A look inside the Herald</span>
                             <a href="archive.php">Browse the archive</a>
                         </figcaption>
                     </figure>
@@ -74,7 +74,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                 <div class="layout-clear" aria-hidden="true">&nbsp;</div>
             </div>
             <!-- end #page -->
-        </div>
+        </main>
         <footer id="footer">
             <div class="footer-inner">
                 <div class="footer-identity">
@@ -85,6 +85,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                     <h2 class="footer-heading">The Herald</h2>
                     <ul class="footer-links">
                         <li><a href="about.php">About us</a></li>
+                        <li><a href="index.php#services">Our services</a></li>
                         <li><a href="subscribe.php">Subscribe</a></li>
                         <li><a href="advertise.php">Advertise</a></li>
                         <li><a href="archive.php">Archive</a></li>

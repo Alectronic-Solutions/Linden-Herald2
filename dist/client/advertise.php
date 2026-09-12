@@ -16,17 +16,17 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />        <title>Advertise with the Linden Herald</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
+        <meta name="description" content="Connect with the Linden community through display advertising and legal notices in the Linden Herald. Contact us for rates and publication details." />
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="refinements.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
+        <a class="skip-link" href="#page">Skip to content</a>
         <!-- end #header-wrapper -->
         <header id="header">
             <div class="masthead-inner">
                 <div id="logo">
-                    <h1><a href="index.php">Linden Herald</a></h1>
+                    <p class="masthead-name"><a href="index.php">Linden Herald</a></p>
                     <p><em>serving San Joaquin County since 1959</em></p>
                 </div>
                 <p class="publication-note"><span>Linden, California</span><span>Published weekly</span></p>
@@ -44,20 +44,22 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         </nav>
         <!-- end #header -->
         <hr />
-        <div id="page" role="main">
+        <main id="page" tabindex="-1">
         	<div id="page-bgtop">
         		<div id="content">
         			<div class="post">
-        				<h2 class="title">Advertise with the Linden Herald</h2>
+                        <p class="eyebrow">For local businesses &amp; public notices</p>
+                        <h1 class="title">Advertise with the Linden Herald</h1>
         				<div class="entry">
-                            <h2>What are we?</h2>
+                            <nav class="section-links" aria-label="Advertising sections"><a href="#legal-notices">Legal notices <span aria-hidden="true">&darr;</span></a><a href="#display-advertising">Display advertising <span aria-hidden="true">&darr;</span></a></nav>
+                            <h2>Connect with the community</h2>
                             <p>The Linden Herald is published weekly and includes a variety
                                 of local news, sports, club photographs, agricultural news,
                                 regional travel stories, editorials, history, school board
                                 meetings, water districts, sheriff and fire calls, local
                                 advertising and legal notices.</p>
         
-                            <h2>Legal Notices:</h2>
+                            <h2 id="legal-notices">Legal notices</h2>
                             <p>The San Joaquin County Superior Court in Sept. 1960 issued a 
                                 decree (no. 72641) for The Linden Herald as a newspaper of
                                 general circulation. We can publish most legal notices
@@ -65,33 +67,35 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                                 Family Law, trustee sales, and court summons. Our prices are
                                 very competitive.</p>
         
-                            <p>Fictitious business names are $105 single owner/one business name,
-                                ,$145 more for corp., LLC, partnerships, husband and wife
-                                (extra names $10 each)
-                                $425 for Family Law (divorce),
-                                $425 for name change, $425 for Summon
-                                $425 for business bulk sale transfer, etc. Call <a href="tel:+12097728854">209-772-8854</a>
-                                for further pricing. We will file the proof of publication
+                            <ul class="notice-rates">
+                                <li><strong>Fictitious business names:</strong> $105 for a single owner/one business name; $145 more for corporations, LLCs, partnerships, and husband and wife (extra names $10 each).</li>
+                                <li><strong>Family Law (divorce):</strong> $425.</li>
+                                <li><strong>Name change:</strong> $425.</li>
+                                <li><strong>Summons:</strong> $425.</li>
+                                <li><strong>Business bulk sale transfer:</strong> $425.</li>
+                            </ul>
+                            <p>Call <a href="tel:+12097728854">(209) 772-8854</a> for further pricing.</p>
+                            <p>We will file the proof of publication
                                 at no cost for advertisers with the San Joaquin County Court
                                 or San Joaquin County Recorder and issue another copy to
                                 petitioner or registrant.</p>
         
-                            <h2>Display Advertising</h2>
+                            <h2 id="display-advertising">Display advertising</h2>
                             <p>We are 15 miles east of the edge of a major metropolitan area:
                                 Stockton, Tracy, Manteca; an hour south of the State Capital
                                 of Sacramento; and a two hour-drive east of the
                                 San Francisco Bay Area. The Linden area has approximately
                                 5,000 residents inside the school district. The town limits
                                 have about 1,200 citizens.</p>
-                            <p>Please contact us for competitive advertising rates.</p>
+                            <div class="help-note"><h2>Let's talk about your advertisement</h2><p><a href="contact.php">Contact us for advertising rates</a> or call <a href="tel:+12097728854">(209) 772-8854</a>.</p></div>
         
         
-                            <h2>Mail Address</h2>
+                            <h2>Mailing address</h2>
                             <p>Our mailing address is<br />
                                 <strong>PO Box 929<br />
                                     Linden CA 95236</strong></p>
         
-                            <h2>Phone Number</h2>
+                            <h2>Speak with us</h2>
                             <p>24 Hours - <a href="tel:+12097728854">(209) 772-8854</a></p>
         				</div>
         			</div>
@@ -101,7 +105,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         			<figure class="newspaper">
                         <div class="newspaper-frame"><img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" /></div>
                         <figcaption class="edition-caption">
-                            <span>Our weekly newspaper</span>
+                            <span>A look inside the Herald</span>
                             <a href="archive.php">Browse the archive</a>
                         </figcaption>
                     </figure>
@@ -110,7 +114,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         		<div class="layout-clear" aria-hidden="true">&nbsp;</div>
         	</div>
         	<!-- end #page -->
-        </div>
+        </main>
         <footer id="footer">
             <div class="footer-inner">
                 <div class="footer-identity">
@@ -121,6 +125,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                     <h2 class="footer-heading">The Herald</h2>
                     <ul class="footer-links">
                         <li><a href="about.php">About us</a></li>
+                        <li><a href="index.php#services">Our services</a></li>
                         <li><a href="subscribe.php">Subscribe</a></li>
                         <li><a href="advertise.php">Advertise</a></li>
                         <li><a href="archive.php">Archive</a></li>

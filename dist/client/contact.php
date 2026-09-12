@@ -17,18 +17,18 @@ Released   : 20100705
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact Us</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
+        <meta name="description" content="Contact the Linden Herald for news tips, subscriptions, display advertising and legal notices. Call (209) 772-8854 or send a message." />
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="refinements.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
+        <a class="skip-link" href="#page">Skip to content</a>
         <!-- end #header-wrapper -->
         <header id="header">
             <div class="masthead-inner">
                 <div id="logo">
-                    <h1><a href="index.php">Linden Herald</a></h1>
-                    <p><em>Serving Central California since 1959</em></p>
+                    <p class="masthead-name"><a href="index.php">Linden Herald</a></p>
+                    <p><em>serving San Joaquin County since 1959</em></p>
                 </div>
                 <p class="publication-note"><span>Linden, California</span><span>Published weekly</span></p>
             </div>
@@ -45,25 +45,19 @@ Released   : 20100705
         </nav>
         <!-- end #header -->
         <hr />
-        <div id="page" role="main">
+        <main id="page" tabindex="-1">
         	<div id="page-bgtop">
         		<div id="content">
         			<div class="post">
-        				<h2 class="title">Contact Linden Herald</h2>
+                        <p class="eyebrow">We would like to hear from you</p>
+                        <h1 class="title">Contact the Linden Herald</h1>
         				<div class="entry">
-                            <p>Please feel free to call us anytime for news tips, comments,
-                                to place legal notices or to buy display advertising or
-                                buy a subscription. We will answer the phone or return
-                                calls as soon as we retum.</p>
-        
-                            <h2>Mail Address</h2>
-                            <p>Our mailing address is<br />
-                                <strong>PO Box 929<br />
-                                    Linden CA 95236</strong></p>
-        
-                            <p>Our correspondents live and work in Linden and are available
-                                at anytime,<br />Our phone number 24 hrs, seven days is
-                                <strong><a href="tel:+12097728854">209-772-8854</a></strong>.</p>
+                            <p class="lead">Your news, questions and comments are welcome.</p>
+                            <p>Get in touch for news tips, subscriptions, legal notices or display advertising. We will answer the phone or return your call as soon as we can.</p>
+                            <div class="contact-details">
+                                <div><h2>Give us a call</h2><a class="contact-number" href="tel:+12097728854">(209) 772-8854</a><p>Our phone line is available 24 hours, seven days a week.</p></div>
+                                <div><h2>Write to us</h2><address><strong>Linden Herald</strong><br />PO Box 929<br />Linden, CA 95236</address></div>
+                            </div>
                             <form action="contact.php" method="post">
                                 <fieldset>
                                     <legend>Send a Message</legend>
@@ -76,14 +70,14 @@ Released   : 20100705
                                         <input type="email" name="lhemail" id="lhemail" maxlength="60" autocomplete="email" />
                                     </div>
                                     <div class="form-field">
-                                        <label for="lhphone">Phone (###-###-####)</label>
+                                        <label for="lhphone">Phone</label>
                                         <input type="tel" name="lhphone" id="lhphone" maxlength="20" autocomplete="tel" />
                                     </div>
                                     <div class="form-field">
                                         <label for="message4lh">Message</label>
                                         <textarea name="message4lh" id="message4lh" rows="8"></textarea>
                                     </div>
-                                    <button type="submit">Submit Message</button>
+                                    <button type="submit">Send message</button>
                                 </fieldset>
                             </form>
         				</div>
@@ -94,7 +88,7 @@ Released   : 20100705
         			<figure class="newspaper">
                         <div class="newspaper-frame"><img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" /></div>
                         <figcaption class="edition-caption">
-                            <span>Our weekly newspaper</span>
+                            <span>A look inside the Herald</span>
                             <a href="archive.php">Browse the archive</a>
                         </figcaption>
                     </figure>
@@ -103,7 +97,7 @@ Released   : 20100705
         		<div class="layout-clear" aria-hidden="true">&nbsp;</div>
         	</div>
         	<!-- end #page -->
-        </div>
+        </main>
         <footer id="footer">
             <div class="footer-inner">
                 <div class="footer-identity">
@@ -114,6 +108,7 @@ Released   : 20100705
                     <h2 class="footer-heading">The Herald</h2>
                     <ul class="footer-links">
                         <li><a href="about.php">About us</a></li>
+                        <li><a href="index.php#services">Our services</a></li>
                         <li><a href="subscribe.php">Subscribe</a></li>
                         <li><a href="advertise.php">Advertise</a></li>
                         <li><a href="archive.php">Archive</a></li>

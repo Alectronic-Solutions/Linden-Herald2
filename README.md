@@ -8,6 +8,8 @@ The six public pages were initially copied exactly in commit `ecd6599eaa63063de4
 
 The masthead sits above a full-width teal navigation bar that stays at the top as readers scroll, on desktop and mobile. The navigation sits outside the masthead so it remains sticky for the whole page, with scroll padding to keep linked content clear of it. A restrained newspaper frame, serif page headings and fine dividing rules add polish while preserving the original content. The shared footer provides the mailing address, phone number, page links and a back-to-top link, with a compact layout on phones.
 
+The homepage now introduces subscriptions, display advertising, legal notices and the newspaper archive, with direct links to each service. A short community section connects readers to the newspaper's history and contact page. The same editorial styling carries through all six pages: clear heading hierarchy, subscription and contact details, dated archive rows with PDF sizes, and keyboard skip links. The original masthead, teal palette, navigation, newspaper image and PDF files remain in place. Subscription pricing retains its original January 1, 2023 date; advertising prices and the contact delivery service have not been changed.
+
 ## Publish a new GitHub repository with GitHub Pages
 
 1. Create an empty GitHub repository and commit/push this whole project, including `.github/workflows/pages.yml`. Keep the newspaper PDFs in Git; do not commit `_site/` or `.artifacts/`.

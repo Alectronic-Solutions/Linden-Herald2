@@ -17,17 +17,17 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Subscribe to the Linden Herald</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
+        <meta name="description" content="Receive the Linden Herald by mail each week. Find subscription details and mailing instructions for San Joaquin County delivery." />
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="refinements.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
+        <a class="skip-link" href="#page">Skip to content</a>
         <!-- end #header-wrapper -->
         <header id="header">
             <div class="masthead-inner">
                 <div id="logo">
-                    <h1><a href="index.php">Linden Herald</a></h1>
+                    <p class="masthead-name"><a href="index.php">Linden Herald</a></p>
                     <p><em>serving San Joaquin County since 1959</em></p>
                 </div>
                 <p class="publication-note"><span>Linden, California</span><span>Published weekly</span></p>
@@ -45,29 +45,28 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         </nav>
         <!-- end #header -->
         <hr />
-        <div id="page" role="main">
+        <main id="page" tabindex="-1">
         	<div id="page-bgtop">
         		<div id="content">
         			<div class="post">
-        				<h2 class="title">Subscribe to the Linden Herald</h2>
+                        <p class="eyebrow">Your weekly connection</p>
+                        <h1 class="title">Subscribe to the Linden Herald</h1>
         				<div class="entry">
-                                        <p>Be informed and up-to-date on local news, sports,
-                                            club photographs, agricultural news,  regional
-                                            travel stories, editorials, history, school board
-                                            meetings, water districts, sheriff, fire calls
-                                            and legal notices - subscribe to the Linden
-                                            Herald today.</p>
-                                        <p>The newspaper is distributed each week through the
-                                            postal system. As of Jan. 1, 2023, the
-                                            subscription rate is $42 for 52 issues for delivery
-                                            within San Joaquin County.</p>
-                                        <p>Please Send check along with desired delivery
-                                            address to:</p>
-                                        <p>
-                                        <strong>Linden Herald<br />
-                                        PO Box 929<br />
-                                        Linden, CA 95236-0929</strong></p>
-                                        <p>Phone: <a href="tel:+12097728854">(209) 772-8854</a></p>
+                            <p class="lead">Keep up with the community, one issue at a time.</p>
+                            <p>Local news, sports, agriculture, school board meetings, community photographs, regional travel, editorials and history &mdash; delivered each week through the postal system.</p>
+                            <div class="subscription-offer">
+                        <p class="eyebrow">San Joaquin County delivery</p>
+                                <p class="subscription-price"><strong>$42</strong> <span>for 52 issues</span></p>
+                                <p>One year of the Linden Herald, delivered by mail.</p>
+                                <p class="fine-print">Subscription rate as of January 1, 2023.</p>
+                            </div>
+                            <h2>How to subscribe</h2>
+                            <p>Send a check along with your desired delivery address to:</p>
+                            <address class="mailing-address"><strong>Linden Herald</strong><br />PO Box 929<br />Linden, CA 95236-0929</address>
+                            <div class="help-note">
+                                <h2>Questions about your subscription?</h2>
+                                <p>Call <a href="tel:+12097728854">(209) 772-8854</a> or <a href="contact.php">send us a message</a>.</p>
+                            </div>
         				</div>
         			</div>
         		</div>
@@ -76,7 +75,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         			<figure class="newspaper">
                         <div class="newspaper-frame"><img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" /></div>
                         <figcaption class="edition-caption">
-                            <span>Our weekly newspaper</span>
+                            <span>A look inside the Herald</span>
                             <a href="archive.php">Browse the archive</a>
                         </figcaption>
                     </figure>
@@ -85,7 +84,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         		<div class="layout-clear" aria-hidden="true">&nbsp;</div>
         	</div>
         	<!-- end #page -->
-        </div>
+        </main>
         <footer id="footer">
             <div class="footer-inner">
                 <div class="footer-identity">
@@ -96,6 +95,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                     <h2 class="footer-heading">The Herald</h2>
                     <ul class="footer-links">
                         <li><a href="about.php">About us</a></li>
+                        <li><a href="index.php#services">Our services</a></li>
                         <li><a href="subscribe.php">Subscribe</a></li>
                         <li><a href="advertise.php">Advertise</a></li>
                         <li><a href="archive.php">Archive</a></li>

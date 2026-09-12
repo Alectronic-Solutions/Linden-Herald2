@@ -17,17 +17,17 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About the Linden Herald</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
+        <meta name="description" content="Learn about the Linden Herald, a weekly community newspaper serving Linden and San Joaquin County since 1959." />
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="refinements.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
+        <a class="skip-link" href="#page">Skip to content</a>
         <!-- end #header-wrapper -->
         <header id="header">
             <div class="masthead-inner">
                 <div id="logo">
-                    <h1><a href="index.php">Linden Herald</a></h1>
+                    <p class="masthead-name"><a href="index.php">Linden Herald</a></p>
                     <p><em>serving San Joaquin County since 1959</em></p>
                 </div>
                 <p class="publication-note"><span>Linden, California</span><span>Published weekly</span></p>
@@ -45,23 +45,24 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         </nav>
         <!-- end #header -->
         <hr />
-        <div id="page" role="main">
+        <main id="page" tabindex="-1">
         	<div id="page-bgtop">
         		<div id="content">
         			<div class="post">
-        				<h2 class="title">About Us</h2>
+                        <p class="eyebrow">Rooted in Linden since 1959</p>
+                        <h1 class="title">About the Linden Herald</h1>
         				<div class="entry">
-                                            <h2>Who are we?</h2>
-                                            <p>We are a team of working joumalists with a
+                                            <h2>Local journalists. Local knowledge.</h2>
+                                            <p>We are a team of working journalists with a
                                                 combined total of more than 57 years of
                                                 experience in the community newspaper
                                                 business. We are a print-only newspaper
                                                 written and reported in the traditional
                                                 journalism manner.</p>
         
-                                            <h2>What are we?</h2>
+                                            <h2>A community newspaper since 1959</h2>
                                             <p>The Linden Herald newspaper was established
-                                                in 1959 in the central part of Califomia
+                                                in 1959 in the central part of California
                                                 in the farming community of Linden.</p>
         
                                             <p>The newspaper is published weekly and includes
@@ -81,11 +82,11 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                                                 Law, trustee sales, and court summons.
                                                 Our prices are very competitive.</p>
         
-                                            <h2>Where are we located?</h2>
+                                            <h2>At home in San Joaquin County</h2>
                                             <p>We are 15 miles east of the edge of a major
                                                 metropolitan area, Stockton, Tracy, and
                                                 Manteca; an hour south of the State Capital
-                                                of Sacramento; and a two hour-drive east of
+                                                of Sacramento; and a two-hour drive east of
                                                 the San Francisco Bay Area. The Linden area
                                                 has approximately 5,000 residents inside
                                                 the school district. The town limits have
@@ -94,8 +95,9 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                                             <p>Our mailing address is PO Box 929,
                                                 Linden CA 95236. Our correspondents live
                                                 and work in Linden and are available at
-                                                anytime, Our phone number 24 hrs/seven
-                                                days at <a href="tel:+12097728854">209-772-8854</a>.</p>
+                                                any time. Our phone number is available 24 hours, seven
+                                                days a week at <a href="tel:+12097728854">209-772-8854</a>.</p>
+                            <div class="page-actions"><a class="button" href="subscribe.php">Subscribe to the Herald <span aria-hidden="true">&rarr;</span></a><a class="text-link" href="contact.php">Get in touch <span aria-hidden="true">&rarr;</span></a></div>
         
         				</div>
         			</div>
@@ -105,7 +107,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         			<figure class="newspaper">
                         <div class="newspaper-frame"><img src="images/lindenpg1.png" alt="Linden Herald newspaper front page" width="296" height="486" /></div>
                         <figcaption class="edition-caption">
-                            <span>Our weekly newspaper</span>
+                            <span>A look inside the Herald</span>
                             <a href="archive.php">Browse the archive</a>
                         </figcaption>
                     </figure>
@@ -114,7 +116,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
         		<div class="layout-clear" aria-hidden="true">&nbsp;</div>
         	</div>
         	<!-- end #page -->
-        </div>
+        </main>
         <footer id="footer">
             <div class="footer-inner">
                 <div class="footer-identity">
@@ -125,6 +127,7 @@ adapted for lindenherald.com by Larry Anderson - larry@portcommodore.com
                     <h2 class="footer-heading">The Herald</h2>
                     <ul class="footer-links">
                         <li><a href="about.php">About us</a></li>
+                        <li><a href="index.php#services">Our services</a></li>
                         <li><a href="subscribe.php">Subscribe</a></li>
                         <li><a href="advertise.php">Advertise</a></li>
                         <li><a href="archive.php">Archive</a></li>

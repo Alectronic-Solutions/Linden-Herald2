@@ -3,4 +3,5 @@ node_modules/
 *.tgz
 *.tar.gz
 .artifacts/
+.playwright-cli/
 _site/
